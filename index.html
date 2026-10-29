@@ -1,0 +1,408 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Apostolic Practice Advisory helps Catholic and Jesuit institutions bring mission to life through leadership, strategy, formation, and organizational practice.">
+<title>Apostolic Practice Advisory | Mission in Practice</title>
+<style>
+:root {
+  --navy: #172b3a;
+  --navy-light: #263f50;
+  --cream: #f7f4ed;
+  --white: #ffffff;
+  --gold: #b8955a;
+  --ink: #27343b;
+  --muted: #637078;
+  --line: #e3ded3;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  color: var(--ink);
+  background: var(--cream);
+  line-height: 1.7;
+}
+a { color: inherit; }
+.container { width: min(1100px, 90%); margin: auto; }
+header {
+  background: var(--navy);
+  color: var(--white);
+  padding: 22px 0;
+}
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.brand {
+  font-size: 1.05rem;
+  letter-spacing: .07em;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+nav { display: flex; flex-wrap: wrap; gap: 22px; }
+nav a {
+  font-family: Arial, sans-serif;
+  font-size: .85rem;
+  color: #f0eee8;
+  text-decoration: none;
+}
+nav a:hover { color: #e0c18a; }
+.hero {
+  background: var(--navy);
+  color: var(--white);
+  padding: 100px 0 112px;
+  border-top: 1px solid #3b4c56;
+}
+.eyebrow {
+  font-family: Arial, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: .19em;
+  font-size: .76rem;
+  color: var(--gold);
+  font-weight: bold;
+}
+h1 {
+  font-size: clamp(2.8rem, 6vw, 5rem);
+  line-height: 1.08;
+  font-weight: normal;
+  max-width: 850px;
+  margin: 22px 0;
+  letter-spacing: -.025em;
+}
+.hero p {
+  font-size: 1.25rem;
+  color: #e0e5e6;
+  max-width: 680px;
+}
+.button {
+  display: inline-block;
+  margin-top: 22px;
+  padding: 13px 22px;
+  background: var(--gold);
+  color: #172b3a;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  border: 1px solid var(--gold);
+}
+.button:hover { background: #d0b47e; }
+.button.outline { background: transparent; color: white; }
+section { padding: 78px 0; }
+.section-heading {
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1.2;
+  font-weight: normal;
+  color: var(--navy);
+  margin: 12px 0 24px;
+}
+.intro {
+  max-width: 800px;
+  font-size: 1.2rem;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+  margin-top: 35px;
+}
+.service {
+  background: var(--white);
+  padding: 28px;
+  border-top: 3px solid var(--gold);
+}
+.service h3 {
+  color: var(--navy);
+  font-size: 1.35rem;
+  line-height: 1.3;
+  font-weight: normal;
+  margin: 4px 0 12px;
+}
+.service p { margin-bottom: 0; }
+.number {
+  font-family: Arial, sans-serif;
+  color: var(--gold);
+  font-size: .8rem;
+  letter-spacing: .12em;
+}
+.dark {
+  background: var(--navy);
+  color: var(--white);
+}
+.dark .section-heading { color: var(--white); }
+.dark .eyebrow { color: #d7b779; }
+.dark p { color: #e0e5e6; }
+.two-col {
+  display: grid;
+  grid-template-columns: 1.1fr .9fr;
+  gap: 65px;
+  align-items: start;
+}
+.principles {
+  border-top: 1px solid #52616b;
+  padding-top: 20px;
+}
+.principles p { margin: 0 0 20px; }
+.audience {
+  background: #ede8dc;
+}
+.audience-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 40px;
+  margin-top: 30px;
+}
+.audience-list p {
+  padding: 17px 0;
+  margin: 0;
+  border-bottom: 1px solid #d6cfc1;
+}
+.contact {
+  text-align: center;
+  background: var(--white);
+}
+.contact .intro { margin: 0 auto; }
+.contact-email {
+  display: inline-block;
+  color: var(--navy);
+  font-size: 1.2rem;
+  margin-top: 16px;
+  overflow-wrap: anywhere;
+}
+footer {
+  background: #10212c;
+  color: #d4dcdf;
+  padding: 28px 0;
+  font-family: Arial, sans-serif;
+  font-size: .82rem;
+}
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+@media (max-width: 760px) {
+  .hero { padding: 68px 0 78px; }
+  .grid { grid-template-columns: 1fr; }
+  .two-col { grid-template-columns: 1fr; gap: 25px; }
+  .audience-list { grid-template-columns: 1fr; }
+  section { padding: 58px 0; }
+  nav { gap: 12px; }
+}
+</style>
+</head>
+<body>
+<header>
+  <div class="container nav">
+    <div class="brand">Apostolic Practice Advisory</div>
+    <nav aria-label="Main navigation">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#approach">Approach</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="container">
+      <div class="eyebrow">Mission · Leadership · Institutional Practice</div>
+      <h1>Bringing mission to life in institutional practice.</h1>
+      <p>
+        Helping Catholic and Jesuit institutions translate their identity,
+        values, and aspirations into the structures, decisions, and everyday
+        practices that shape institutional life.
+      </p>
+      <a class="button" href="#services">Explore advisory services</a>
+      <a class="button outline" href="#contact">Start a conversation</a>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="container">
+      <div class="eyebrow">The work of mission</div>
+      <h2 class="section-heading">Mission is more than a statement.</h2>
+      <p class="intro">
+        A strong mission is visible in how an institution leads, hires,
+        forms its people, allocates resources, makes decisions, and responds
+        to the needs of its community. Apostolic Practice Advisory helps
+        leaders connect their deepest commitments with the practical work
+        of institutional change.
+      </p>
+      <p>
+        Grounded in Catholic educational leadership, Jesuit mission, and
+        collaborative organizational practice, this work helps institutions
+        move from aspiration to implementation without losing sight of the
+        people at the heart of their mission.
+      </p>
+    </div>
+  </section>
+
+  <section id="services" style="background:#fff">
+    <div class="container">
+      <div class="eyebrow">Advisory services</div>
+      <h2 class="section-heading">Turning commitment into practice.</h2>
+      <p class="intro">
+        Practical, collaborative support for leaders navigating institutional
+        questions that are strategic, organizational, and deeply human.
+      </p>
+      <div class="grid">
+        <article class="service">
+          <div class="number">01 / STRATEGY</div>
+          <h3>Mission Integration &amp; Strategy</h3>
+          <p>
+            Connect mission priorities with institutional strategy, divisional
+            plans, governance, measurable goals, and accountability.
+          </p>
+        </article>
+        <article class="service">
+          <div class="number">02 / LEADERSHIP</div>
+          <h3>Leadership Formation</h3>
+          <p>
+            Design formation experiences for senior leaders, faculty, staff,
+            trustees, and emerging leaders that connect Catholic identity
+            with daily leadership decisions.
+          </p>
+        </article>
+        <article class="service">
+          <div class="number">03 / ORGANIZATION</div>
+          <h3>Organizational Culture &amp; Change</h3>
+          <p>
+            Help teams navigate change, clarify responsibilities, strengthen
+            collaboration, and build structures that support a shared mission.
+          </p>
+        </article>
+        <article class="service">
+          <div class="number">04 / LISTENING</div>
+          <h3>Listening &amp; Assessment</h3>
+          <p>
+            Facilitate stakeholder listening, mission assessments, and
+            collaborative reflection that turn diverse perspectives into
+            clear institutional priorities.
+          </p>
+        </article>
+        <article class="service">
+          <div class="number">05 / PEOPLE</div>
+          <h3>Hiring, Formation &amp; Accountability</h3>
+          <p>
+            Strengthen the ways institutions recruit, onboard, evaluate, and
+            form people in alignment with their Catholic identity and mission.
+          </p>
+        </article>
+        <article class="service">
+          <div class="number">06 / IMPLEMENTATION</div>
+          <h3>Implementation &amp; Progress Tracking</h3>
+          <p>
+            Translate plans into action steps, ownership, timelines, and
+            reporting practices that help leaders understand progress and
+            sustain momentum.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="approach" class="dark">
+    <div class="container two-col">
+      <div>
+        <div class="eyebrow">A collaborative approach</div>
+        <h2 class="section-heading">Respect the tradition. Engage the reality. Build what comes next.</h2>
+        <p>
+          Effective mission integration is neither a compliance exercise nor
+          a slogan. It requires thoughtful listening, honest assessment,
+          practical structures, and sustained attention to institutional life.
+        </p>
+      </div>
+      <div class="principles">
+        <p><strong>Listen before prescribing.</strong><br>
+          Understand the people, history, strengths, and challenges that
+          shape each institution.</p>
+        <p><strong>Connect values to decisions.</strong><br>
+          Make mission visible in leadership, human resources, planning,
+          resource allocation, and community life.</p>
+        <p><strong>Build with people, not around them.</strong><br>
+          Create shared ownership and clear accountability while preserving
+          the trust essential to meaningful change.</p>
+        <p><strong>Measure what matters.</strong><br>
+          Establish practical indicators and regular opportunities for
+          reflection, learning, and adjustment.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container two-col">
+      <div>
+        <div class="eyebrow">Experience &amp; perspective</div>
+        <h2 class="section-heading">Leadership shaped by mission and practice.</h2>
+      </div>
+      <div>
+        <p>
+          With nearly two decades of experience in educational leadership,
+          this advisory practice draws on work across student life, student
+          services, academic affairs, enrollment, budgets, equity and
+          inclusion, research, teaching, and mission integration.
+        </p>
+        <p>
+          Experience includes leading mission assessment and planning,
+          facilitating institution-wide listening, supporting formation
+          across campus communities, and helping leaders connect strategic
+          commitments with implementation.
+        </p>
+        <p>
+          The work is informed by the Catholic intellectual tradition,
+          Ignatian spirituality, Catholic Social Teaching, and a commitment
+          to building institutions where people can participate meaningfully
+          in a shared mission.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="audience">
+    <div class="container">
+      <div class="eyebrow">Who we serve</div>
+      <h2 class="section-heading">For institutions committed to a living mission.</h2>
+      <div class="audience-list">
+        <p>Catholic colleges and universities</p>
+        <p>Jesuit educational institutions and ministries</p>
+        <p>Catholic schools and educational networks</p>
+        <p>Diocesan and church-affiliated organizations</p>
+        <p>Catholic healthcare and mission-driven nonprofits</p>
+        <p>Leadership teams navigating organizational change</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="container">
+      <div class="eyebrow">Begin a conversation</div>
+      <h2 class="section-heading">What could mission look like in practice?</h2>
+      <p class="intro">
+        Whether you are beginning a mission assessment, developing a
+        leadership formation program, or working through a complex
+        organizational challenge, let's explore how to move the work forward.
+      </p>
+      <a class="button" href="mailto:bravomilt@gmail.com?subject=Apostolic%20Practice%20Advisory%20Inquiry">Email to connect</a>
+      <p><a class="contact-email" href="mailto:bravomilt@gmail.com">bravomilt@gmail.com</a></p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <span>Apostolic Practice Advisory</span>
+    <span>Bringing mission to life in institutional practice.</span>
+    <span>&copy; 2026 Apostolic Practice Advisory</span>
+  </div>
+</footer>
+</body>
+</html>
