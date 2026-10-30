@@ -369,11 +369,71 @@ footer .container {
       expenses may be additional.
     </p>
 
-    <p>
-      <a href="mailto:bravomilt@gmail.com">
-        Contact us to discuss an engagement →
-      </a>
-    </p>
+   
+<div style="max-width:650px; margin:2rem auto;">
+  <h3>Start a Conversation</h3>
+  <p>Tell us a little about your institution and how we might help.</p>
+
+  <form action="https://formspree.io/f/xoeennoo" method="POST"
+        style="display:grid; gap:1rem;">
+
+    <label>
+      Name *
+      <input type="text" name="name" required
+             placeholder="Your name"
+             style="width:100%; padding:12px; margin-top:6px;">
+    </label>
+
+    <label>
+      Institution *
+      <input type="text" name="institution" required
+             placeholder="College, university, or organization"
+             style="width:100%; padding:12px; margin-top:6px;">
+    </label>
+
+    <label>
+      Professional title
+      <input type="text" name="title"
+             placeholder="Your role"
+             style="width:100%; padding:12px; margin-top:6px;">
+    </label>
+
+    <label>
+      Email address *
+      <input type="email" name="email" required
+             placeholder="you@institution.edu"
+             style="width:100%; padding:12px; margin-top:6px;">
+    </label>
+
+    <label>
+      Area of interest *
+      <select name="area_of_interest" required
+              style="width:100%; padding:12px; margin-top:6px;">
+        <option value="">Please select</option>
+        <option>Mission integration diagnostic</option>
+        <option>Institutional strategy and mission integration</option>
+        <option>Leadership formation and advisory</option>
+        <option>Speaking or workshops</option>
+        <option>Other</option>
+      </select>
+    </label>
+
+    <label>
+      How can we help?
+      <textarea name="message" rows="5"
+                placeholder="Briefly describe your needs or goals."
+                style="width:100%; padding:12px; margin-top:6px;"></textarea>
+    </label>
+
+    <button type="submit"
+            style="padding:14px 24px; background:#263c36;
+                   color:white; border:0; cursor:pointer;
+                   font-size:1rem;">
+      Submit Inquiry
+    </button>
+  </form>
+</div>
+
   </div>
 </section>
 
